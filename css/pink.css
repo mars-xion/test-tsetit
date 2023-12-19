@@ -1,0 +1,22 @@
+/*variables*/
+:root{
+    --mainColor:#836c45;
+	--secondaryColor:#dab87e;
+
+    --border-color:#164D56;
+    --border-color-p2: #564c42;
+
+	--mainText:#fff;
+	--mainText-p2:#405280;
+	--secondaryText:black;
+
+	--themeDotBorder:#fff;
+
+	--previewBg:rgb(218, 184, 126, 0.8);
+	--previewshadow:#836c45;
+
+	--imageBg:#fff;
+	--highlight-color: #ba7537;
+
+	--buttonColor:#5e452e;
+}

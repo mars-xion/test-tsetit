@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>glass website made by Mars</title>
+	<link rel="stylesheet" type="text/css" href="./css/stylemainweb.css">
+</head>
+<body>
+	
+	<section>
+
+		<header>
+			<a href="#" class="logo">Mars.</a>
+			<div class="toggle" onclick="menuToggle();"></div>
+		</header>
+		
+		<div class="content">
+			<h2>Reday?<br><span>Photos from all over</span></h2>
+		</div>
+		<div class="glass"></div>
+	    <video src="Video/2.mp4" autoplay muted loop></video>
+		<ul class="sci">
+			<li style="--i:1"><a href="index.html"> My personal page </a></li>
+			<!-- <li style="--i:2"><a href="#"> two </a></li>
+			<li style="--i:3"><a href="#"> three </a></li> -->
+		</ul>
+		<ul class="nav">
+			<li style="--i:1"><a href="gallary.html"> Random Photos from Oman </a></li>
+			<li style="--i:2"><a href="M.A.html"> Misfat Al Abryeen Village </a></li>
+			<li style="--i:3"><a href="3d_photo_page.html"> 3D slide </a></li>
+			<li style="--i:4"><a href="card_pics.html"> Green trees in Oman </a></li>
+		</ul>
+
+	</section>
+	<script type="text/javascript">
+		function menuToggle(){
+			const toggleMenu = document.querySelector('.toggle');
+			const section = document.querySelector('section');
+			toggleMenu.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>

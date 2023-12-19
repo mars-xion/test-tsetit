@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family:100,200,300,400,500,600,700,800,900');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.glass2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	backdrop-filter: blur(15px);
+	z-index: 1;
+	box-shadow: 10px 0 15px rgba(0,0,0,0.1);
+	transition: 0.5s;
+	transition-delay: 1s;
+}
+video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	object-fit: cover;
+}
+h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -100px;
+    color: #0e112e;
+    font-size: 4em;
+    z-index: 1000;
+}
+section{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #0e112e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clip-path: circle(0px at center center);
+	z-index: 1000;
+}
+
+.cont{
+	position: relative;
+	margin-top: 200vh;
+	background: #0e112e;
+	padding: 100px;
+	color: white;
+	z-index: 1000;
+}
+.cont h2{
+    font-size: 2.5em
+    margin-bottom: 20px;
+}
+.cont p{
+	font-size: .8em;
+	word-spacing: 5px;
+}
+
+.innerText{
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);	
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 8vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+.text{
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);	
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 8vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #0e112e;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+/*div*/
+
+.gallary{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* minmax, when it should jumb to next line */
+    min-height: 100vh; /* streach image*/
+    grid-gap: 2rem;
+}
+.img-container{
+	overflow: hidden; /* streach on the same box*/
+	z-index: 100;
+}
+.img-container img{
+	width: 90%;
+	height: 90%;
+	object-fit: cover; /*when it resize it gives a nice look */
+	transition: all 0.3s ease-out; /* spacifiy the trasieton spped and look*/
+	cursor: pointer;
+}
+.img-container img:hover{
+	transform: scale(1.2);
+}
+
+.modal{
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: 0.25s ease-out;
+	z-index: 100;
+}
+.modal.open{
+	opacity: 1;
+	pointer-events: all;
+}
+.modal p{
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 300;
+	font-family: 'Dancing Script', cursive;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* center text*/
+	text-align: center;
+}
+.full-img{
+	position: absolute;
+	height: 70%;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.5);  /* to make it on the center, scale is for the animetion*/
+    transition: all 0.25s ease-out;
+}
+.full-img.open{
+	transform: translate(-50%, -50%) scale(1);
+} /*to expand*/
+
+/*button*/
+.sci2 {
+	z-index: 100;
+	position: absolute;
+ 	bottom: 5%;
+ 	right: 5%;
+ 	display: flex.
+}
+.sci2 li{
+	list-style: none;
+	margin: 5px;
+	padding: 0 6px;
+	background: #fff;
+}
+.sci2 li a{
+	color: #111;
+	text-decoration: none;
+	display: inline-block;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+}

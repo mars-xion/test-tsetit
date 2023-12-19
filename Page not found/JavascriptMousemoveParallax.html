@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page not found</title>
+	<link rel="stylesheet" type="text/css" href="JavascriptMousemoveParallax.css">
+</head>
+<body>
+	<div id ="container">
+		<div class="content">
+			<h2>404</h2>
+			<h4>Oop! page not found</h4>
+			<p>The page you are looking for does not exict. You may have mistyped the address oor the page may have moved</p>
+			<a href="#"> Back To Home </a>
+		</div>
+	</div>
+    <script type="text/javascript">
+    	var container = document.getElementById('container');
+    	window.onmousemove = function (e) {
+    		var x = e.clientX;
+                y = e.clientY;
+            container.style.backgroundPositionX = x + 'px';
+            container.style.backgroundPositionY = y + 'px';
+    	}
+    </script>
+</body>
+</html>
